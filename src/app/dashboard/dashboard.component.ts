@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
       this.http.post('http://localhost:3000/api/appointment/desc', data)
       .subscribe((resp) =>{
         this.appointments = resp.json();
-        console.log(this.appointments);
+       // console.log(this.appointments);
       });
     }
 }

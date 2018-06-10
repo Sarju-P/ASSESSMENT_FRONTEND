@@ -4,7 +4,6 @@ import {Http} from '@angular/http/src/http';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AppointmentComponent } from './appointment/appointment.component';
 import { AddAppointmentComponent } from './add-appointment/add-appointment.component';
 import { AppointmentService } from 'src/app/Service/appointment.service';
 import { HttpModule } from '@angular/http';
@@ -14,7 +13,6 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     DashboardComponent,
-    AppointmentComponent,
     AddAppointmentComponent
   ],
   imports: [

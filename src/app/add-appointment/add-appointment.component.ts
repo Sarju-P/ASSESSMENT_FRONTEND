@@ -27,7 +27,6 @@ export class AddAppointmentComponent implements OnInit {
 
   toggleView(): void {
     this.showForm = !this.showForm;
-    this.showMessage=false;
     this.desc = '';
     this.time = null;
     this.date = null;
