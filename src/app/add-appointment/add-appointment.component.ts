@@ -24,6 +24,9 @@ export class AddAppointmentComponent implements OnInit {
 
   toggleView() :void {
     this.showForm =!this.showForm;
+    this.desc='';
+    this.time=null;
+    this.date=null;
   }
 
   onSubmit(){
@@ -37,7 +40,10 @@ export class AddAppointmentComponent implements OnInit {
     .subscribe((res) =>{
       this.message = "Data is addeded successfully !"
     });
+    
    }
+
+   
 
   }
 }
