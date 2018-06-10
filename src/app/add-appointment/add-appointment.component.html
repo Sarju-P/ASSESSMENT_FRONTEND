@@ -1,9 +1,12 @@
-<div class="col-md-10 col-md-offset-1 margin-bottom-20" *ngIf='message'>
-    <div class="row">
-            <h2>{{message}}</h2>
+
+
+<div class="col-md-10 col-md-offset-1 margin-bottom-20" *ngIf='message && showForm && !showMessage'>
+    <div class="row alert alert-info">
+            <h6>{{message | uppercase}}</h6>
+           
     </div>
   </div>
-  
+  <br/>
   <div class="col-md-10 col-md-offset-1 margin-bottom-20">
     <div class="row">
       <div id="divNew" class="margin-bottom-20" *ngIf='!showForm'>
@@ -23,7 +26,8 @@
       <br/>
       <div class="margin-bottom-20">
           <label for="date" style="width:150px;">DATE</label>
-          <input required [(ngModel)]="date" name="date" class="form-control"  type="date" id="date" style="width:300px;">
+          <!-- <input required [(ngModel)]="date" name="date" class="form-control"  type="date" id="date" style="width:300px;"> -->
+          <input required [(ngModel)]="date" min={{today}} name="date" class="form-control"  type="date" id="date" style="width:300px;">
       </div>
   </div>
   
