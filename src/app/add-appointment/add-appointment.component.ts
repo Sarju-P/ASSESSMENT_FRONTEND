@@ -45,7 +45,8 @@ export class AddAppointmentComponent implements OnInit {
       this.message="Please enter values in all fields."
     }
     else if (this._appointService.validateRegister(appoint)) {
-      this.http.post('http://localhost:3000/api/appointment', appoint)
+    //  this.http.post('http://localhost:3000/api/appointment', appoint)
+    this.http.post('https://still-oasis-20303.herokuapp.com/api/appointment', appoint)
         .subscribe((res) => {
           this.message = "Data is Addeded Successfully !"
         });
